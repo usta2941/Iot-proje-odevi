@@ -9,8 +9,8 @@ from googleapiclient.discovery import build
 from google.oauth2 import service_account 
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
-SERVICE_ACCOUNT_FILE ='C:/Users/usta1/Desktop/iot_proje/service_account.json'
-PARENT_FOLDER_ID = "1z3P0nqq-0Wj17j2SZFI_A90qrxDiM7qO"
+SERVICE_ACCOUNT_FILE =''
+PARENT_FOLDER_ID = ""
 
 def authenticate():
     creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE,scopes=SCOPES)
@@ -81,7 +81,7 @@ def find_latest_image(directory, file_extensions=["*.jpg", "*.png"]):
 
 
 def detect_and_save_human(camera_index=0, project_directory="C:/Users/usta1/Desktop/iot_proje", save_prefix="detected_human"):
-    bot_token = "6411178732:AAEZ8aezDONs-Qs_-aoteJ-z_zv9BcbjA8o"
+    bot_token = ""
     chat_id = "778970874"
     directory_path = "C:/Users/usta1/Desktop/iot_proje"
     # Kamera başlatma
